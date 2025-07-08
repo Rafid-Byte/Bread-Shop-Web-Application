@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Cari makanan..." class="search-input">
+                <i class="fa-solid fa-magnifying-glass search-icon" id="search-btn"></i>
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Gallary">Gallary</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass" id="search-toggle"></i>
+                <i class="fa-solid fa-heart" id="wishlist-icon">
+                    <span class="wishlist-badge" id="wishlist-badge">0</span>
+                </i>
+                <i class="fa-solid fa-cart-shopping" id="cart-icon">
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </i>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Don't Be Bitter,<br>Be<span>Bread</span>-er</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/main_img.png">
+            </div>
+
+        </div>
+
+        <p>
+            Selamat datang di Bakery Shop, tempat di mana cita rasa autentik bertemu dengan kualitas terbaik. 
+            Kami menghadirkan berbagai pilihan makanan dan minuman yang dibuat dengan bahan-bahan segar dan 
+            berkualitas tinggi. Dari roti yang baru dipanggang hingga hidangan utama yang lezat, setiap produk 
+            kami dibuat dengan penuh cinta dan perhatian untuk memberikan pengalaman kuliner yang tak terlupakan 
+            bagi Anda dan keluarga.
+        </p>
+
+        <div class="main_btn">
+            <a href="#Menu">Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/Food-Plate.png">
+            </div>
+
+            <div class="about_text">
+                <h1><span>About</span>Us</h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    Bakery Shop telah berdiri sejak tahun 2010 dengan komitmen untuk menyajikan makanan berkualitas tinggi 
+                    dengan cita rasa yang autentik. Kami menggunakan resep tradisional yang telah diwariskan turun-temurun, 
+                    dikombinasikan dengan teknik modern untuk menghasilkan produk terbaik. Tim chef berpengalaman kami 
+                    memastikan setiap hidangan dibuat dengan standar kualitas tertinggi, menggunakan bahan-bahan segar 
+                    yang dipilih secara selektif dari supplier terpercaya.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#Menu" class="about_btn">Order Now</a>
+
+    </div>
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Our<span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card" data-name="Burger" data-price="49000" data-image="image/buger.jpg">
+
+                <div class="menu_image">
+                    <img src="image/buger.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Burger</h2>
+                    <p>
+                        Burger lezat dengan daging sapi premium dan sayuran segar
+                    </p>
+                    <h3>RP 49.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card" data-name="Pasta" data-price="35000" data-image="image/pasta.jpg">
+
+                <div class="menu_image">
+                    <img src="image/pasta.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pasta</h2>
+                    <p>
+                        Pasta Italia dengan saus bolognese yang kaya rasa
+                    </p>
+                    <h3>RP 35.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Lasagna" data-price="45000" data-image="image/lasagna.webp">
+
+                <div class="menu_image">
+                    <img src="image/lasagna.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Lasagna</h2>
+                    <p>
+                        Lasagna berlapis dengan keju mozzarella dan daging cincang
+                    </p>
+                    <h3>RP 45.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Chocolate Drink" data-price="25000" data-image="image/chocolate_Drink.jpg">
+
+                <div class="menu_image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Chocolate Drink</h2>
+                    <p>
+                        Minuman coklat hangat dengan whipped cream
+                    </p>
+                    <h3>RP 25.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Pizza" data-price="55000" data-image="image/pizza.jpg">
+
+                <div class="menu_image">
+                    <img src="image/pizza.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pizza</h2>
+                    <p>
+                        Pizza margherita dengan keju mozzarella dan basil segar
+                    </p>
+                    <h3>RP 55.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Hot Dog" data-price="30000" data-image="image/Hot_dog.jpg">
+
+                <div class="menu_image">
+                    <img src="image/Hot_dog.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    <p>
+                        Hot dog dengan sosis premium dan saus mustard
+                    </p>
+                    <h3>RP 30.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Fresh Juice" data-price="20000" data-image="image/juse.jpg">
+
+                <div class="menu_image">
+                    <img src="image/juse.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Fresh Juice</h2>
+                    <p>
+                        Jus buah segar pilihan dengan vitamin tinggi
+                    </p>
+                    <h3>RP 20.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Biryani" data-price="40000" data-image="image/biryani.webp">
+
+                <div class="menu_image">
+                    <img src="image/biryani.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani</h2>
+                    <p>
+                        Nasi biryani dengan daging kambing dan rempah-rempah
+                    </p>
+                    <h3>RP 40.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Chocolate Cake" data-price="35000" data-image="image/chocolate.jpg">
+
+                <div class="menu_image">
+                    <img src="image/chocolate.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Chocolate Cake</h2>
+                    <p>
+                        Kue coklat lembut dengan frosting coklat premium
+                    </p>
+                    <h3>RP 35.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Ice Cream" data-price="18000" data-image="image/ice_cream.jpg">
+
+                <div class="menu_image">
+                    <img src="image/ice_cream.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Ice Cream</h2>
+                    <p>
+                        Es krim vanilla dengan topping coklat dan kacang
+                    </p>
+                    <h3>RP 18.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Spaghetti" data-price="38000" data-image="image/Spanchi.jpg">
+
+                <div class="menu_image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Spaghetti</h2>
+                    <p>
+                        Spaghetti carbonara dengan bacon dan keju parmesan
+                    </p>
+                    <h3>RP 38.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card" data-name="Sandwich" data-price="28000" data-image="image/sandwich.jpg">
+
+                <div class="menu_image">
+                    <img src="image/sandwich.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich</h2>
+                    <p>
+                        Sandwich club dengan ayam, bacon, dan sayuran segar
+                    </p>
+                    <h3>RP 28.000,00</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn add-to-cart">Add to Cart</a>
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Our<span>Gallary</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src="image/gallary_1.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Nikmati koleksi foto makanan lezat kami yang dibuat dengan penuh perhatian dan cinta
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_2.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Nikmati koleksi foto makanan lezat kami yang dibuat dengan penuh perhatian dan cinta
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_3.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Nikmati koleksi foto makanan lezat kami yang dibuat dengan penuh perhatian dan cinta
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_4.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Nikmati koleksi foto makanan lezat kami yang dibuat dengan penuh perhatian dan cinta
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_5.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Nikmati koleksi foto makanan lezat kami yang dibuat dengan penuh perhatian dan cinta
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_6.jpg">
+
+                <h3>Food</h3>
+                <p>
+                    Nikmati koleksi foto makanan lezat kami yang dibuat dengan penuh perhatian dan cinta
+                </p>
+                <a href="#" class="gallary_btn">Order Now</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Customer<span>Review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_1.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Makanan di Bakery Shop benar-benar luar biasa! Burger mereka sangat juicy dan fresh, 
+                        pasta-nya juga authentic banget. Pelayanannya ramah dan tempatnya nyaman. 
+                        Pasti akan kembali lagi untuk mencoba menu lainnya. Highly recommended!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_2.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Sudah beberapa kali pesan di sini dan selalu puas dengan kualitasnya. 
+                        Pizza margherita-nya the best, keju mozzarella-nya melted sempurna. 
+                        Delivery juga cepat dan makanan masih hangat saat sampai.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_3.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Chocolate cake dan ice cream di sini juara banget! Manis-nya pas, 
+                        tidak terlalu overwhelming. Cocok untuk dessert setelah makan berat. 
+                        Harga juga reasonable untuk kualitas yang didapat.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_4.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">John Deo</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Fresh juice-nya segar banget, terasa buah aslinya. Sandwich club-nya 
+                        juga enak, isian-nya generous dan roti-nya crispy. Perfect untuk lunch!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Order-->
+
+    <div class="order" id="Order">
+        <h1><span>Order</span>Now</h1>
+
+        <div class="order_main">
+
+            <div class="order_image">
+                <img src="image/order_image.png">
+            </div>
+
+            <form action="#">
+
+                <div class="input">
+                    <p>Name</p>
+                    <input type="text" placeholder="you name">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="you email">
+                </div>
+
+                <div class="input">
+                    <p>Number</p>
+                    <input placeholder="you number">
+                </div>
+
+                <div class="input">
+                    <p>How Much</p>
+                    <input type="number" placeholder="how many order">
+                </div>
+
+                <div class="input">
+                    <p>You Order</p>
+                    <input placeholder="food name">
+                </div>
+
+                <div class="input">
+                    <p>Address</p>
+                    <input placeholder="you Address">
+                </div>
+
+                <a href="#" class="order_btn">Order Now</a>
+
+            </form>
+
+        </div>
+            
+    </div>
+        <section class="location">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.86483656289303!2d107.17058588487389!3d-6.285095741377892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6984ca5fe9e99b%3A0xe2b18cb19084034f!2sFakultas%20Hukum!5e0!3m2!1sid!2sid!4v1751817077698!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+
+    <!--Team-->
+
+    <div class="team">
+        <h1>Our<span>Team</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image/chef1.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Chef berpengalaman dengan keahlian masakan internasional dan lokal</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef2.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Chef berpengalaman dengan keahlian masakan internasional dan lokal</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef3.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Chef berpengalaman dengan keahlian masakan internasional dan lokal</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef4.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Chef berpengalaman dengan keahlian masakan internasional dan lokal</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>USA</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+94 37 1289 456 </p>
+                <p>+62 12 3456 789</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>7 Days A Week!</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> AS </span></p>
+
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Keranjang Belanja</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">
+                <i class="fa-solid fa-cart-shopping" style="font-size: 50px; color: #ccc; margin-bottom: 20px;"></i>
+                <p>Keranjang belanja kosong</p>
+            </div>
+        </div>
+        <div class="cart-total" id="cart-total" style="display: none;">
+            <h3>Total: RP <span id="total-amount">0</span></h3>
+            <button class="checkout-btn" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlist-sidebar">
+        <div class="wishlist-header">
+            <h2>Wishlist</h2>
+            <button class="close-wishlist" id="close-wishlist">&times;</button>
+        </div>
+        <div class="wishlist-items" id="wishlist-items">
+            <div class="empty-wishlist">
+                <i class="fa-solid fa-heart" style="font-size: 50px; color: #ccc; margin-bottom: 20px;"></i>
+                <p>Wishlist kosong</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div class="search-modal" id="search-modal">
+        <div class="search-content">
+            <div class="search-header">
+                <h2>Hasil Pencarian</h2>
+                <button class="close-search" id="close-search">&times;</button>
+            </div>
+            <div class="search-results" id="search-results">
+                <p>Masukkan kata kunci untuk mencari...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-content">
+            <h2>Checkout Pesanan</h2>
+            
+            <div class="order-summary" id="order-summary">
+                <h3>Ringkasan Pesanan</h3>
+                <div id="summary-items"></div>
+                <hr>
+                <div class="summary-item">
+                    <strong>Total: RP <span id="final-total">0</span></strong>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h3>Pilih Metode Pembayaran</h3>
+                
+                <div class="payment-option" data-method="qris">
+                    <input type="radio" name="payment" id="qris" value="qris">
+                    <label for="qris">
+                        <i class="fa-solid fa-qrcode"></i>
+                        QRIS
+                    </label>
+                </div>
+
+                <div class="payment-option" data-method="bank">
+                    <input type="radio" name="payment" id="bank" value="bank">
+                    <label for="bank">
+                        <i class="fa-solid fa-building-columns"></i>
+                        Transfer Bank
+                    </label>
+                </div>
+
+                <div class="payment-option" data-method="ewallet">
+                    <input type="radio" name="payment" id="ewallet" value="ewallet">
+                    <label for="ewallet">
+                        <i class="fa-solid fa-wallet"></i>
+                        E-Wallet (OVO, GoPay, DANA)
+                    </label>
+                </div>
+            </div>
+
+            <div class="checkout-actions">
+                <button class="btn btn-secondary" id="cancel-checkout">Batal</button>
+                <button class="btn btn-primary" id="confirm-payment">Bayar Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="success-modal">
+        <div class="success-content">
+            <i class="fa-solid fa-check-circle"></i>
+            <h2>Pesanan Berhasil!</h2>
+            <p>Terima kasih atas pesanan Anda. Pesanan akan segera diproses.</p>
+            <button class="btn btn-primary" id="close-success">OK</button>
+        </div>
+    </div>
+
+</body>
+</html>
